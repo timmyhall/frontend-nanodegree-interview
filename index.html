@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Udacity Interview</title> 
+</head>
+<body>
+	<p>1) The most influential book, blog post, or article I have read regarding front-end development was a full edition of Bloomberg Businessweek titled, <i>What is Code?</i>, by Paul Ford. The title page of the magazine immediately grasped my attention because it simply stated, "If you can't read this (referring to a few lines of code), you've got to read this." I realized I had never taken a computer science course and the only basic technical skills I had included Microsoft Office applications and some statistics software. I needed to learn code or I was going to be left behind and most of my skills irrelevant. I thought Front-End Web Development would be great area to start. Learning the foundational langugages of programming would enable me to develop future applications or products and pursue in this incredibly innovating field.</p>
+	<p>2) I would like to master the progmraming language Python because I love its simplicity and power. I also have a big interest in Data Science and Python seems to be a popular language amongst the data mining experts. We have all of this data available yet we are having a hard time maximizing the potential insights and answers that data has the potential to provide. Becoming proficient in Python really excites me because I could use my sound critical thinking skills combined with my programming skills to come up with exciting new solutions to many problems exisitng in our society.</p>
+	<p>3) Knockout is an awesome framework that allows developers to simplify interfaces when working in javascript and be able to write really clean, readable code. It is open-source, pure javascript and works with any web framework. The upsides for the me are the declarative bindings features that easily connect your DOM elements with your data that you have either entered or uploaded into your model. The downsides for me are the Model, View, ViewModel design pattern that I am still extremely new to and understanding how to define different variables within a function's scope or closure.</p>
+	<p>4) Inside the script tag below, I rewrote the Fibonacci sequence using memoization. This programming technique allows you to store data and only execute the function when the data is present.</p> 
+	<p>5) Click <a href="http://timmyhall.github.io/Cat-Clicker/">here</a> to play my Cow Clicker Project. I used the Knockout "click" binding feature to invoke my javascript function, a click counter function, when the DOM element, my cow image, is clicked on. I created an obervable object, a click counter, with an intial value of 0. Observables in knockout will automatically update when the data model's state changes. I then created a function that will increment the click counter each time I click on the cow image. I used the data-bind click method to bind my increment counter function to the image in the DOM. I used the data-bind text method to bind the click counter to my paragraph underneath the image.</p>
+	<p><strong>Dream Job Description: Product Manager at Duolingo</strong></p>
+	<ul>
+		<li>Establish a shared vision across the company on short and long term priorities</li>
+		<li>Guide the design, implementation and analysis of innovative products</li>
+		<li>Collaborate with designers on mocks, usability studies and product tradeoffs</li>
+	</ul>
+	<p>6) I want to have to very solid understading of all the workings in front-end development. I want to be a part of a team developing cutting edge applications or hardware in some sort of business, product, or development role.</p>
+
+<script type="text/javascript">
+
+var fibonacci = (function() {
+
+  var memoize = {};
+
+  function foo(x) {
+  	var value;
+
+    if (x in memoize) {
+    	value = memoize[x];
+    } else {
+      if (x === 0 || x === 1)
+      	value = x;
+      else
+      	value = foo(x - 1) + foo(x - 2);
+
+      memoize[x] = value;
+    }
+    return value;
+  }
+  return foo;
+})();
+
+console.log(fibonacci(1));
+console.log(fibonacci(10));
+console.log(fibonacci(1));
+
+</script>
+
+</body>
+</html> 
